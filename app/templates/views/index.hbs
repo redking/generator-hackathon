@@ -1,0 +1,18 @@
+<div class="container">
+    <% if (hasReact) { %><div id="header"></div><% } else { %>
+    <div class="row">
+        <div class="col-xs-12">
+            <img alt="banner" class="img-responsive" src="img/banner.png" />
+        </div>
+    </div><% } %>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Hack For Equality</h1>
+            <p>Test Page</p>
+        </div>
+    </div><% if (hasDeezer) { %>
+    <div class="deezer">
+        <p>Found <span id="song-total"></span> song(s) with Equality in the title:</p>
+        <ol id="results"></ol>
+    </div><% } %>
+</div>
