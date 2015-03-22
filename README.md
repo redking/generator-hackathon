@@ -1,4 +1,4 @@
-# generator-hackathon [![Build Status](https://secure.travis-ci.org/redking/generator-hackathon.png?branch=master)](https://travis-ci.org/redking/generator-hackathon)
+# generator-hackathon
 
 > [Yeoman](http://yeoman.io) generator
 

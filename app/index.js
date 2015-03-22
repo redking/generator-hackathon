@@ -164,7 +164,7 @@ module.exports = yeoman.generators.Base.extend({
       this.template('views/index.hbs');
       this.template('views/layouts/default.hbs');
       this.copy('app.js');
-      this.copy('README.md');
+      this.copy('_README.md', 'README.md');
 
       // JavaScript
       this.template('src/js/app.js');
