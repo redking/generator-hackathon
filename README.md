@@ -37,6 +37,17 @@ Launching the generator is easy
 Sometimes yeoman can't find your generators, depending on how your environment is setup. If this happens, run the
 command `yo doctor` and follow the instructions.
 
+## TODO 
+
+This generator can be improved in a number of ways. I'm happy to accept PRs for all or any of these!
+
+1. Allow the user to opt-out of choosing a JavaScript library i.e. add the option 'None';
+2. Add Ember to the list of JavaScript libraries. The generator should properly configure its environment for Ember development;
+3. Add Sass to the list of CSS languages;
+4. Allow the user to choose between Grunt or Gulp. This would require duplicating the same functionality offered
+by the Gulp tasks;
+5. Allow a choice between CommonJS + Browserify, AMD + require.js or the Module pattern.
+
 ## License
 
 MIT
