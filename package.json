@@ -21,7 +21,8 @@
     "bin"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "marriage equality"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.9",

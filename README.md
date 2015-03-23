@@ -1,37 +1,41 @@
 # generator-hackathon
 
-> [Yeoman](http://yeoman.io) generator
+A [Yeoman](http://www.yeoman.io) generator for the [Hack for Equality Hackathon](https://ti.to/hackforequality/hack-for-equality), Dublin, 
+March 28th 2015. 
 
+This generator sets up a simple dev environment with Node / [Express](http://expressjs.com/) on the backend and either 
+[React.js](http://facebook.github.io/react/) or [jQuery](https://jquery.com/) on the front.
+
+Modules are written in CommonJS format and bundled using [Browserify](http://browserify.org/), and everything comes 
+together with [Gulp](http://gulpjs.com/).
+
+In addition, you may optionally include the [Deezer API JavaScript SDK](http://developers.deezer.com/api).
 
 ## Getting Started
 
-First, install Yeoman globally
+### Prerequisites 
 
-```bash
-npm install -g yo
-```
-### Yeoman Generators
+You need to have
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+1. A recent version of [Node](http://www.nodejs.org/);
+2. I recommend installing the latest version of npm, rather than the one packaged with Node. Run the command `sudo npm update -g npm@latest`.
 
-To install generator-hackathon from npm, run:
+### Setting up the generator
 
-```bash
-npm install -g generator-hackathon
-```
+1. Install Yeoman and Gulp globally with the command `sudo npm install -g yo gulp`;
+2. To install the hackathon generator, run the command `sudo npm install -g generator-hackathon`.
 
-Finally, initiate the generator:
+### Running the generator
 
-```bash
-yo hackathon
-```
+Launching the generator is easy
 
-### Getting To Know Yeoman
+1. Create a directory for your project and cd into it;
+2. Run the command `yo hackathon` and follow the prompts.
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+### Common problems
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
+Sometimes yeoman can't find your generators, depending on how your environment is setup. If this happens, run the
+command `yo doctor` and follow the instructions.
 
 ## License
 

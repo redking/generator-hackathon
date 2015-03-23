@@ -39,7 +39,7 @@ module.exports = yeoman.generators.Base.extend({
       var prompts = [{
         type: 'checkbox',
         name: 'jsFrameworks',
-        message: 'Please select all or any of the following JavaScript libraries',
+        message: 'Please select one or more of the following JavaScript libraries',
         choices: [
           {
             name: 'jQuery',
@@ -112,7 +112,7 @@ module.exports = yeoman.generators.Base.extend({
       var prompts = [{
         type: 'confirm',
         name: 'hasDeezer',
-        message: 'Should I include the Deezer API files?',
+        message: 'Should I include the Deezer API JavaScript SDK?',
         default: false
       }];
 
@@ -190,7 +190,7 @@ module.exports = yeoman.generators.Base.extend({
 
   install: function () {
     this.installDependencies({
-      skipInstall: this.options['skip-install']
+      skipInstall: false //this.options['skip-install']
     });
   }
 });
