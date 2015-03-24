@@ -95,7 +95,7 @@ module.exports = yeoman.generators.Base.extend({
       var prompts = [{
         type: 'confirm',
         name: 'hasBootstrap',
-        message: 'Should I include Twitter Bootstrap?',
+        message: 'Should I include the Twitter Bootstrap CSS?',
         default: true
       }];
 
@@ -190,7 +190,18 @@ module.exports = yeoman.generators.Base.extend({
 
   install: function () {
     this.installDependencies({
-      skipInstall: false //this.options['skip-install']
+      skipInstall: this.options['skip-install']
     });
+
+    this.on('end', function () {
+      this.log(yosay(
+        'Thank you! All done!'
+      ));
+
+      this.log('To launch your development environment, run the command '
+                + chalk.red('gulp')
+                + ' then go to '
+                + chalk.red('http://localhost:3000'));
+    }.bind(this));
   }
 });

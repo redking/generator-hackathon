@@ -1,6 +1,6 @@
 {
   "name": "generator-hackathon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An Express app generator for the Hack for Equality Hackathon, Dublin, Ireland March 28th 2015 https://ti.to/hackforequality/hack-for-equality",
   "license": "MIT",
   "main": "app/index.js",
