@@ -4,7 +4,7 @@ A [Yeoman](http://www.yeoman.io) generator for the [Hack for Equality Hackathon]
 March 28th 2015. 
 
 This generator sets up a simple dev environment with Node / [Express](http://expressjs.com/) on the backend & either 
-[React.js](http://facebook.github.io/react/) or [jQuery](https://jquery.com/) on the front.
+[React.js](http://facebook.github.io/react/) and/or [jQuery](https://jquery.com/) on the front.
 
 Modules are written in CommonJS format and bundled using [Browserify](http://browserify.org/), and everything comes 
 together with [Gulp](http://gulpjs.com/).
@@ -14,17 +14,15 @@ develop music-based apps using our API (cause that's who I work for! But it isn'
 
 ## Getting Started
 
-### Prerequisites 
-
-You need to have
+### Prerequisites
 
 1. A recent version of [Node](http://www.nodejs.org/);
 2. I recommend installing the latest version of npm, rather than the one packaged with Node. Run the command `npm update -g npm@latest` 
 (you may need to run this command in `sudo`).
 
-### Setting up the generator
+### Setting up the generator    
 
-1. Install Yeoman & Gulp globally with the command `npm install -g yo gulp` (again, possible in `sudo` mode);
+1. Install Yeoman & Gulp globally with the command `npm install -g yo gulp` (again, you might need `sudo` mode);
 2. To install the hackathon generator, run the command `npm install -g generator-hackathon`.
 
 ### Running the generator
@@ -33,6 +31,8 @@ Launching the generator is easy
 
 1. Create a directory for your project and cd into it;
 2. Run the command `yo hackathon` and follow the prompts.
+
+Done! You project is ready.
 
 #### Common problems
 
@@ -65,18 +65,18 @@ In addition, we include the following development tools
 
 It also sets up a simple Express project structure that looks like this
 
-- bin *(entry-point to the entire app, launches the server)*  
-- lib *(modules used on the server-side)* 
-    - middleware *(custom middleware for Express)*
-- routes *(Express routes)*
-- src *(Client-side code)*
-    - css
-    - img
-    - js
-- tasks *(Gulp tasks)*
-- views *(Express server-side templates & layouts)*
-- app.js *(Express server)*
-- Gulpfile.js
+- `bin` *(entry-point to the entire app, launches the server)*  
+- `lib` *(modules used on the server-side)* 
+    - `middleware` *(custom middleware for Express)*
+- `routes` *(Express routes)*
+- `src` *(Client-side code)*
+    - `css`
+    - `img`
+    - `js`
+- `tasks` *(Gulp tasks)*
+- `views` *(Express server-side templates & layouts)*
+- `app.js` *(Express server)*
+- `Gulpfile.js`
 
 In addition, a folder `public` will be created once you launch the server. This acts as the docroot, and contains the
 results of running the Gulp build. It shouldn't be directly modified.
@@ -85,13 +85,13 @@ For a client-side app, most of your time will be spent developing in the `src` d
 
 ## Starting development
 
-After you run the generator, the project will have a `README.md in its root that explains how to get going.
+After you run the generator, the project will have a `README.md` in its root that explains how to get going.
 
-(To summarise it in a line, just run the command `gulp` from your project root and go to http://localhost:3000/ in your browser). 
+(Or, in a line, just run the command `gulp` from your project root and go to http://localhost:3000/ in your browser). 
 
 ## TODO 
 
-This generator can be improved in a number of ways. I'm happy to accept PRs for all or any of these!
+This generator could be improved in a number of ways. I'm happy to accept PRs for all or any of these!
 
 1. Add Ember to the list of JavaScript libraries (though the generator would have to configure the environment for Ember development
 too);
